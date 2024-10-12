@@ -1,20 +1,24 @@
-import React from 'react'
-import Header from './Components/Header'
-import Filter from './Components/Common/Filter'
-import HeroSection from './Components/HeroSection'
-import Card from './Components/Common/Card'
-import Footer from './Components/Footer'
+import { Route, Routes } from "react-router-dom";
+import Home from "./Pages/Home";
+
+import routes from "./Routes/index.jsx";
+import Product from "./Pages/auth/Product.jsx";
 
 const App = () => {
+  // console.log(routes);
+
   return (
     <div>
-      <Header/>
-      <Filter/>
-      <HeroSection/>
-      <Card/>
-      <Footer/>
+      <Routes>
+        {routes.map((item, index) => {
+          const { path, element } = item;
+          console.log(item);
+          return <Route key={index} path={path} element={element} />;
+        })}
+        {/* <Route path="/product" element={<Product />}/> */}
+      </Routes>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
