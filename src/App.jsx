@@ -3,6 +3,7 @@ import Home from "./Pages/Home";
 
 import routes from "./Routes/index.jsx";
 import Product from "./Pages/auth/Product.jsx";
+import { ToastContainer } from "react-toastify";
 
 const App = () => {
   // console.log(routes);
@@ -17,6 +18,7 @@ const App = () => {
         })}
         {/* <Route path="/product" element={<Product />}/> */}
       </Routes>
+      <ToastContainer />
     </div>
   );
 };

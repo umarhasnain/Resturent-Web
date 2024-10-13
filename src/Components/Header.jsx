@@ -21,8 +21,11 @@ const Header = () => {
         </ul>
       </div>
 
-      <div>
+      <div className='flex gap-2'>
+      {/* <Button data="SignUp"/>'  */}
+
         <Button data="Contact"/>
+
       </div>
     </div>
   )
