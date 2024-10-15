@@ -1,5 +1,6 @@
 import React from 'react'
 import Button from './Common/Button'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
   return (
@@ -21,8 +22,8 @@ const Header = () => {
         </ul>
       </div>
 
-      <div className='flex gap-2'>
-      {/* <Button data="SignUp"/>'  */}
+      <div className='flex items-center gap-[5px]'>
+     <Link to='/signup' className='bg-white text-black  w-24 h-8 text-center rounded-xl  border-2 border-[#39DB4A] hover:bg-[#39DB4A] hover:text-white '> Sign Up</Link>
 
         <Button data="Contact"/>
 

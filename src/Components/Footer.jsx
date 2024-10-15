@@ -5,7 +5,7 @@ import { FaFacebook, FaInstagram, FaTwitter, FaTwitterSquare, FaYoutube } from "
 const Footer = () => {
   return (
   <div>
-      <div className='flex justify-evenly flex-wrap m-8 '>
+      <div className='flex justify-evenly flex-wrap m-8 gap-4 '>
        <div className='w-60'>
         <h1 className='text-xl mb-4'><span className='bg-[#39DB4A] pl-2 pr-2 rounded text-white'>F</span> OODI</h1>
         <p>Savour the artistry where every dish is a culinary masterpiece</p>
