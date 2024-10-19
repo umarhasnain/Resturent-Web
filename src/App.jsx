@@ -1,3 +1,5 @@
+import "bootstrap/dist/css/bootstrap.min.css";
+
 import { Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home";
 
@@ -13,7 +15,6 @@ const App = () => {
       <Routes>
         {routes.map((item, index) => {
           const { path, element } = item;
-          console.log(item);
           return <Route key={index} path={path} element={element} />;
         })}
         {/* <Route path="/product" element={<Product />}/> */}
