@@ -18,14 +18,14 @@ const Card = () => {
     }
 
   return (
-    <div className="flex justify-evenly items-center flex-wrap">
+    <div className="flex justify-evenly items-center flex-wrap m-20">
         {/* <button onClick={}>s</button> */}
         <Modal modalId={modalId}  openModal={openModal} setOpenModal={setOpenModal}/>
       {menu.map((items) => {
         const {id, title , price , img} = items
       
         return (
-          <div className="h-[350px] w-[280px] border-2 border-primaryThemeColor rounded-xl m-6 p-4  gap-4">
+          <div className="h-[350px] w-[280px] border-2 border-primaryThemeColor rounded-xl m-2 p-4  gap-2">
             <img className="h-[180px] w-[300px] mb-8" src={img} alt="" />
             <h2 className="font-bold text-primaryThemeColor mb-2"><span className="text-black">Tittle:</span> {title}</h2>
             {/* <p>{items.description}</p> */}

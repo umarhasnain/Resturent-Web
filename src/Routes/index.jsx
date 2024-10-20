@@ -2,7 +2,8 @@
 import Product from "../Pages/auth/Product.jsx";
 import SignIn from "../Pages/auth/SignIn.jsx";
 import SignUp from "../Pages/auth/SignUp.jsx";
-import AdminDashboard from "../Pages/Dashboard/adminDashboard.jsx";
+import AddProduct from "../Pages/Dashboard/Admin/AddProduct.jsx";
+import AdminDashboard from "../Pages/Dashboard/Admin/AdminDashboard.jsx";
 import Home from "../Pages/Home.jsx";
 import NoPage from "../Pages/NoPage.jsx";
 
@@ -31,6 +32,10 @@ const routes = [
     {
         path: '/admin',
         element: <AdminDashboard/>
+    },
+    {
+        path: '/addproduct',
+        element: <AddProduct/>
     },
     {
         path: '*',

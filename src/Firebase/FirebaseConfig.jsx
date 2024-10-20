@@ -10,7 +10,7 @@ import {
 } from "firebase/auth";
 
 import { getFirestore, collection, addDoc , getDocs ,doc,
-  setDoc
+  setDoc,onSnapshot ,query
  } from "firebase/firestore";
 
 const firebaseConfig = {
@@ -43,5 +43,5 @@ export {
   getDocs,
   setDoc,
   doc,
-  signOut
+  signOut,onSnapshot ,query
 };
